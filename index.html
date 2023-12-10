@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzería Don Luigi</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/mediaquery.css">
+  <link rel="stylesheet" href="./assets/animaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <link rel="icon" type="image/jpg" href="/assets/Pizza-de-anana.jpg"/>
+    <i class="fa-solid fa-pizza-slice" style="color: #ff0000;" class="logo">Pizzas Don Luigi</i>
+
+    <nav class="navbar">
+
+      <label for="menu-toggle" class="menu-label">
+        <i class="fa-solid fa-bars" style="color: #ff0000;"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+
+      <ul class="navbar-list">
+        <li><a href="#">Pizzas</a></li>
+        <li><a href="#">Sabores</a></li>
+        <li><a href="#">Historia de Don Luigi</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+      </ul>
+      <div id="ybarAccountProfile" class="_yb_15ve4 _yb_1cxyj  _yb_9m0ig   "> <a class="_yb_cv4rx" tabindex="" data-ylk="sec:ybar;slk:sign-in;elm:signin;subsec:settings;itc:0;tar:login.yahoo.com" data-redirect-params="pspid=[[pspid]]&amp;activity=ybar-signin" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-687163491%3A1696903763830504&theme=glif" data-rapid_p="9" data-v9y="1">Iniciar sesión Con Google</a>  </div>
+    </div>
+      <label for="cart-toggle" class="cart-label">
+        <i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i>
+      </label>
+      <input type="checkbox" id="cart-toggle">
+
+      <!-- Nuestro carrito -->
+
+      <div class="cart">
+        <h2>Nuestras Pizzas</h2>
+
+        <div class="cart-item">
+          <img src="./assets/pizza-de-pollo.jpg"alt="pizza" />
+
+          <div class="item-info">
+            <h3 class="item-title">Pizza de Pollo</h3>
+            <p class="item-bid">Agregar al Carrito</p>
+            <span class="item-price">$3250</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/empanadillas-jamon-queso.jpg" alt="Empanada" />
+
+          <div class="item-info">
+            <h3 class="item-title">Empanada de JyQ</h3>
+            <p class="item-bid">Agregar al Carrito</p>
+            <span class="item-price">$271</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/vegetariana.jpg" alt="Pizza" />
+
+          <div class="item-info">
+            <h3 class="item-title">Pizza de verduras</h3>
+            <p class="item-bid">Agregar al Carrito</p>
+            <span class="item-price">$3250</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/señor-pucho.png" alt="Bebida" />
+
+          <div class="item-info">
+            <h3 class="item-title">Pepsi de 1,5 Lt</h3>
+            <p class="item-bid">Agregar Al Carrito</p>
+            <span class="item-price">$1200</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/OIP.png" alt="Empanada" />
+
+          <div class="item-info">
+            <h3 class="item-title">Empanada de Carne</h3>
+            <p class="item-bid">Agregar Al Carrito</p>
+           
+           <span class="item-price">$271</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>18.3 ETH</span>
+        </div>
+
+        <button class="btn-add">Comprar</button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+
+      <div class="hero-info">
+        <h1>
+          La Pizzería Don Luigi
+        </h1>
+
+        <p>
+          El lugar perfecto para satisfacer tus antojos de pizza. Nuestra pasión por la pizza se refleja en cada bocado que servimos. Utilizamos ingredientes frescos y de alta calidad para crear las pizzas más deliciosas que puedas imaginar.
+          Nuestro menú ofrece una amplia variedad de opciones, desde las clásicas y atemporales pizzas margarita y pepperoni hasta nuestras creaciones únicas con ingredientes frescos y sabrosos. También ofrecemos opciones vegetarianas y veganas para asegurarnos de que todos disfruten de una experiencia culinaria excepcional.
+          En la Pizzería Delicioso, la calidad y el sabor son nuestra prioridad.
+        </p>
+
+        <a href="#">La rica pizza</a>
+      </div>
+
+      <div class="hero-card">
+        <img src="./assets/images.jpeg" alt="Promo"/>
+
+        <div class="hero-card-info">
+          
+          <div class="hero-card-top">
+            <h3>Pizza grande + 1 docena de empanadas</h3>
+            <span>10</span>
+          </div>
+
+
+          <div class="hero-card-bottom">
+            
+            <div class="hero-card-creator">
+              <img src="./assets/OIP.jpeg" alt="ejemplo de Promo" />
+                </div>
+            </div>
+
+            <div class="hero-card-price">
+              <p>valor</p>
+              <span>7500</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- INFO -->
+    <section id="info">
+
+      <section>
+        <h2>Historia de nuestra pizzería</h2>
+        <p>Desde su fundación en 1935, Pizzería de Don Luigi de tradicion italiana se ha convertido en un icono de la gastronomía local. Nuestra historia comenzó con el sueño de ofrecer auténticas pizzas italianas en el corazón de la ciudad. Durante décadas, hemos trabajado incansablemente para mantener la calidad y la tradición en cada bocado que servimos. Hoy, seguimos siendo un lugar de encuentro para familias y amigos que desean disfrutar de una deliciosa comida y un ambiente acogedor.</p>
+    </section>
+    <section>
+        <h2>Sabores de Pizzas</h2>
+        <p>Las criptomonedas, como Bitcoin y Ethereum, han revolucionado la forma en que las personas almacenan y transfieren valor en línea. Utilizan tecnología de cadena de bloques para garantizar transacciones seguras y descentralizadas. Además, las criptomonedas han abierto nuevas oportunidades de inversión y han cambiado la forma en que vemos el dinero y los activos digitales.</p>
+    </section>
+    <section>
+    <h2 class="Sabores">Sabores de Pizzas</h2>
+    <br>
+    <p class="Textosabores">Nuestra pizzería te ofrece una amplia gama de sabores de pizzas para satisfacer todos los gustos. Desde las clásicas y sencillas a las más innovadoras, seguro encontrarás tu favorita. Algunos de nuestros sabores más populares incluyen:</p>
+    <br>
+    <ul>
+        <li class="Sabor"><strong>Pizza Margherita:</strong> La auténtica pizza italiana con tomate, mozzarella y albahaca fresca.</li>
+        <li class="Sabor"><strong>Pizza Pepperoni:</strong> Cubierta con generosas rodajas de pepperoni, queso derretido y tomate.</li>
+        <li class="Sabor"><strong>Pizza Vegetariana:</strong> Una explosión de sabores con champiñones, pimientos, cebolla y aceitunas.</li>
+        <li class="Sabor"><strong>Pizza BBQ:</strong> Con pollo a la parrilla, cebolla roja y una deliciosa salsa de barbacoa.</li>
+        <li class="Sabor"><strong>Pizza Hawaiana:</strong> La combinación perfecta de piña y jamón, un toque tropical en cada bocado.</li>
+    </ul>
+    <br>
+    <h2>Sabores de Empanadas</h2>
+    <br>
+    <p>Nuestras empanadas son pequeñas delicias llenas de sabor, ideales como aperitivos o comidas ligeras. Descubre nuestra variedad de rellenos de empanadas, que incluyen:</p>
+    <br>
+    <ul>
+        <li class="Sabor"><strong>Empanada de Carne:</strong> Rellena de carne molida, cebolla, aceitunas y huevo duro.</li>
+        <li class="Sabor" ><strong>Empanada de Queso:</strong> Con una mezcla de quesos derretidos que se derriten en tu boca.</li>
+        <li class="Sabor" ><strong>Empanada de Espinacas y Queso:</strong> Una opción saludable y deliciosa para los amantes de las verduras.</li>
+        <li class="Sabor"><strong>Empanada de Pollo con Curry:</strong> Un toque de curry para un sabor exótico y emocionante.</li>
+        <li class="Sabor"><strong>Empanada de Jamón y Queso:</strong> Un clásico irresistible para los amantes del jamón y el queso.</li>
+    </ul>
+    <br>
+    <p>En <strong>Nuestra Pizzería</strong>, estamos comprometidos a ofrecerte una experiencia culinaria diversa y deliciosa. ¡Esperamos que disfrutes explorando nuestra lista de sabores de pizzas y empanadas! Te invitamos a visitarnos y probar cada una de estas maravillas culinarias.</p>
+    </section>
+      <div class="info-cards-container">
+        
+        <div class="info-card">
+          <img src="./assets/pizza-margarita.jpg" alt="Pizzas"/>
+          <h3>Pizzas</h3>
+          <p>Saborea las mejores pizzas italianas como la Hawaiana, la BBQ, Vegetariana.</p>
+        </div>
+
+        <div class="info-card">
+          <img src="./assets/empanadas-espinaca.jpg" alt="Empanadas"/>
+          <h3>Empanadas</h3>
+          <p>Saborea las mejores empanadas tipicas españolas de JyQ, Carne, y EyQ.</p>
+        </div>
+
+        <div class="info-card">
+          <img src="./assets/gaseosas.jpeg" alt="Bebidas"/>
+          <h3>Bebidas</h3>
+          <p>servimos Bebidas Gaseosas sin alcohol y cervezas.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DISCOVER -->
+    <section id="discover">
+
+      <div class="discover-info">
+        <h2>Sabor Auténtico en Cada Bocado: Pizzería Don Luigi Te Invita a Disfrutar</h2>
+
+        <div class="discover-text">
+          <p>
+            En Don Luigi, nos esforzamos por ofrecer más que solo pizza; ofrecemos momentos memorables. Ya sea que estés disfrutando de una cena íntima, celebrando con amigos o llevando la pizza a casa, nuestra dedicación a la calidad y el servicio excepcional se refleja en cada detalle.
+          </p>
+
+          <a href="#">haz tu pedido ya</a>
+        </div>
+      </div>
+
+      <div class="discover-cards">
+        <img src="./assets/pizza-de-pollo.jpg" alt="Pizzas">
+        <img src="./assets/empanadillas-jamon-queso.jpg" alt="Empanadas">
+        <img src="./assets/gaseosas-cervezas-aguas-medium-size.jpg" alt="Gaseosas y Cervezas">
+      </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+
+      <h2>Hot NFTs</h2>
+
+      <div class="categories">
+        <button class="category active"><i class="fa-solid fa-pizza-slice" style="color: #ff0000;"></i>Pizzas</button>
+        <button class="category"> <i class="fa-solid fa-beer-mug-empty" style="color: #ff0000;"></i>Bebidas</button>
+        <button class="category"><i class="fa-solid fa-cake-candles" style="color: #ff0000;"></i>Cumpleaños</button>
+        <button class="category"><i class="fa-solid fa-futbol" style="color: #ff0000;"></i>Papi futbol</button>
+        <button class="category"><i class="fa-solid fa-taxi" style="color: #ff0000;"></i>Estacionamiento</button>
+        <button class="category"><i class="fa-solid fa-motorcycle" style="color: #ff0000;"></i>Delivery</button>
+      </div>
+
+      <div class="products-container">
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/pizza-de-anana.jpeg" alt="Pizza Hawaiana" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>Pizza de Anana</h3>
+              <p>Para llevar</p>
+            </div>
+  
+            <!--Info mid-->
+            <div class="product-mid">
+
+              <div class="product-user">
+                <img src="./assets/anana.png" alt="Anana" />
+                <p>Don Luigi</p>
+              </div>
+
+              <span>$3250</span>
+            </div>
+
+            <!--Info bottom-->
+            <div class="product-bot">
+              <div class="offer-time">
+                <img src="./assets/luigi.png" alt="Don Luigi">
+              </div>
+
+              <button class="btn-add">Agregar a la carta</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/pizza-de-verdura.jpeg" alt="Pizza Vegetariana" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>Pizza de Vegetariana</h3>
+              <p>Para Llevar</p>
+            </div>
+  
+            <!--Info mid-->
+            <div class="product-mid">
+
+              <div class="product-user">
+                <img src="./assets/verduras.png" alt="verduras" />
+               </div>
+
+              <span>$3250</span>
+            </div>
+
+            <!--Info bottom-->
+            <div class="product-bot">
+              <div class="offer-time">
+                <img src="./assets/luigi.png" alt="Don Luigi">
+              </div>
+
+              <button class="btn-add">Agregar a la carta</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/pepperoni.jpeg" alt="Pizza Pepperoni" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>Pizza Pepperoni</h3>
+              <p>Para llevar</p>
+            </div>
+  
+            <!--Info mid-->
+            <div class="product-mid">
+
+              <div class="product-user">
+                <img src="./assets/pepperoni.png" alt="Pepperoni" />
+                <p>Don Luigi</p>
+              </div>
+
+              <span>$3250</span>
+            </div>
+
+            <!--Info bottom-->
+            <div class="product-bot">
+              <div class="offer-time">
+                <img src="./assets/luigi.png" alt="Don Luigi">
+              </div>
+
+              <button class="btn-add">Agregar a la carta</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/pizza-margarita.jpg" alt="Vegetariana" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>Pizza Napolitana</h3>
+              <p>Para llevar</p>
+            </div>
+  
+            <!--Info mid-->
+            <div class="product-mid">
+
+              <div class="product-user">
+                <img src="./assets/tomate.jpeg" alt="Vegetariana" />
+                <p>Don Luigi</p>
+              </div>
+
+              <span>$3250</span>
+            </div>
+
+            <!--Info bottom-->
+            <div class="product-bot">
+              <div class="offer-time">
+                <img src="./assets/luigi.png" alt="Don Luigi">
+              </div>
+
+              <button class="btn-add">Agregar a la carta</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/pizza-de-pollo.jpeg" alt="Pizza BBQ" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>Pizza de Pollo</h3>
+              <p>Para llevar</p>
+            </div>
+  
+            <!--Info mid-->
+            <div class="product-mid">
+
+              <div class="product-user">
+                <img src="./assets/pollo.png" alt="Pollo" />
+                <p>Don Luigi</p>
+              </div>
+
+              <span>$3250</span>
+            </div>
+
+            <!--Info bottom-->
+            <div class="product-bot">
+              <div class="offer-time">
+                <img src="./assets/luigi.png" alt="Don Luigi">
+              </div>
+
+              <button class="btn-add">Agregar a la carta</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <button class="btn-load">Ver mas</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#">envios de CV</a></li>
+        <li><a id="Locales y Telefono">Nuestros locales</a></li>
+        <li><a href="#">Central: Calle Falsa 123</a></li>
+        <li><a id="Locales y Telefono">telefono 4000-3500</a></li>
+      </ul>
+    </div>
+
+    <p> Pizzas <i class="fa-solid fa-pizza-slice" style="color: #ff0000;"></i> hechas con amor por parte de los viejos Don luigi</p>
+  </footer>
+
+</body>
+
+</html>
